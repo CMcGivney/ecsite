@@ -1,38 +1,536 @@
-.App {
-  text-align: center;
+body, html {
+  background-color: #e7dada;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navBar {
+  box-shadow: 0 2px 2px -2px rgba(107, 105, 105, 0.2);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*Home page style*/
+.homeContentGrid {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  min-height: 50em;
+}
+.titleBox {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.title {
+  justify-content: center;
+  padding: 1rem 0;
+  align-self: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.elysianLogo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 5rem;
+  align-self: flex-start;
+  margin: 0;
+}
+.cateringLogo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 5rem;
+  align-self: flex-end;
+  margin: 0;
+}
+
+.motto {
+  font-family: 'Solway', serif;
+  align-self: flex-end;
+  margin: 0;
+
+}
+
+.missionStatement {
+  background-color: black;
+  padding: 3rem 0 ;
+  width: 100%;
+  color: white;
+  text-align: center;
+
+}
+.twitterContainer {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+}
+.twitter {
+  display: flex;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+}
+.youtubeContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: flex;
+  background-color: black;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+.mediaTitle {
+  font-family: 'Solway', serif;
+  justify-self: stretch;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+  height: 7rem;
+  padding: 1rem 0; 
+  margin-bottom: 1rem;
+  background-color: #DBAE4B;
+  color: white;
+  display: flex;
+}
+.youtube {
+  display: flex;
+  justify-self: flex-end;
+  align-self: center;
+  height: auto;
+  width: 80%;
   color: white;
 }
+.affiliations {
+  background-color: black; 
+  padding: 1rem 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  min-height: 40vh;
+  color: white;
+}
+.imageGroup {
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+}
+.com_header {
+  background-color: black; 
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  font-family: 'Solway', serif;
+  color: white;
+  width: 100%;
+  height: 5rem;
+}
+.catholicCommunity {
+  margin: .5em;
+  justify-self: center;
+  align-self: center;
 
-.App-link {
-  color: #61dafb;
+}
+.bbbsUtah {
+  margin: .5em;
+  justify-self: center;
+  align-self: center;
+}
+.voAmerica {
+  margin: .5em;
+  justify-self: center;
+  align-self: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* About Page layout*/
+.aboutTitle {
+  background-color: #DBAE4B;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 1rem;
 }
+.aboutHead {
+  color:black;
+  align-self: center;
+  font-family: 'Solway', serif;
+  padding-left: 1rem;
+
+}
+.aboutMeta {
+  align-self: center;
+  color: white;
+  font-family: 'Merriweather', serif;
+}
+.aboutMeContainer {
+  text-align: center;
+  justify-items: center;
+  width: 100%;
+  min-height: 60vh;
+}
+.personalImg {
+  float: left;
+  margin: 1rem;
+  width: auto;
+}
+.headShot {
+  /* justify-self: center; */
+  height: 30rem;
+  width: 80%;
+  border: 1px solid black;
+  box-shadow: 10px 10px 8px #888888;
+ 
+}
+.aboutMeText {
+  text-align: justify;
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  padding: 1rem;
+
+}
+/*end of About me layout*/
+/*Menu layout and style*/
+.menuTitle {
+  display: flex;
+  flex-direction: column;
+  background-color: #DBAE4B;
+  font-family: 'Solway', serif;
+  text-align: center;
+  padding: 1rem 1rem;
+  width: 100%;
+}
+.menuHead {
+  text-align: center;
+  font-family: 'Solway', serif;
+}
+.menuMeta {
+ font-size: 1rem;
+ color: white;
+}
+.menuContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  background-image: url(./Images/marbleBG.jpg);
+  background-color: #fcfcfc;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  margin-top: 3rem;
+ 
+}
+.apps {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  margin: 1rem;
+  width: 100%;
+  height: 100%;
+}
+.itemHead {
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.salads {
+  width: 100%;
+  height: 100%;
+  justify-self: center;
+  align-self: flex-start;
+  text-align: center;
+  margin: 1rem;
+}
+.entrees {
+  width: 100%;
+  height: 100%;
+  justify-self: center;
+  align-self: flex-start;
+  text-align: center;
+  margin: 1rem;
+}
+.desserts {
+  width: 100%;
+  height: 100%;
+  justify-self: center;
+  align-self: flex-start;
+  text-align: center;
+  margin: 1rem;
+}
+
+/*End of Menu style*/
+/*Contact */
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 1rem;
+  flex-wrap: wrap;
+  min-height: 30rem;
+}
+.contactTitle {
+  background-color: #DBAE4B;
+  color: white;
+  display: flex;
+  margin-bottom: 2rem;
+  justify-content: center;
+  justify-self: center;
+  width: 100%;
+  font-family: "Merriweather", serif;
+  margin-top: 3rem;
+  
+}
+.contactForm {
+  padding: 1rem 1rem;
+
+}
+/* styles for the social media icons */
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+ }
+ 
+ a.social:hover {
+ transform: translateY(-2px); 
+ color: chartreuse;
+ }
+ 
+ a.facebook {
+ color: #4968ad;
+ }
+ 
+ a.twitter {
+ color: #49a1eb;
+ }
+ 
+ a.instagram {
+ color: black;
+ }
+ a.linkedin {
+ color: #49a1eb;
+ }
+ /*End of social styles*/
+ /*Email Style*/
+.emailBox {
+  grid-area: email;
+  padding: .5em;
+  text-align: center;
+  font-size: 1em;
+  font-family: 'Roboto Slab', serif;
+
+}
+
+a.email {
+  color: black;
+}
+
+a.email:hover {
+  color: blue;
+}
+/*End of Email styles*/
+
+/*Events Layout style*/
+.eventHead {
+  display:flex;
+  background-color: #DBAE4B;
+  text-align: center;
+  margin: 3rem 0;
+  padding: 1rem 0;
+  font-family: 'Solway', serif;
+  justify-content: center;
+  width: 100%;
+  height: 15vh;
+}
+/*End og events styles*/
+
+/*Footer style*/
+.footerGrid {
+  justify-content: center;
+  align-items: end;
+  text-align: center;
+  background-color: rgb(219, 174, 75);
+  display: grid;
+  width: 100%;
+  padding: 1rem;
+  grid-template-columns: 20em;
+  grid-template-rows: auto;
+  grid-template-areas: "title" "social" "email" "phone"  "power";
+}
+
+.mainFooter {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  padding: .5em 0;
+  grid-area: title;
+}
+.phoneNum {
+  font-family: 'Roboto Slab', serif;
+  padding: .5em;
+  grid-area: phone;
+}
+.poweredBy {
+  font-family: 'Roboto Slab', serif;
+  grid-area: power;
+  padding: .5em;
+}
+.socialFollows {
+  grid-area: social;
+  padding: 1rem;
+}
+
+/*FAQ Page style*/
+.faqContainer {
+  display: flex;
+  width: 100%;
+  margin: 2rem 0 5rem 0;
+}
+
+.cardContainer {
+  justify-content: center;
+  
+}
+.faqCard {
+ display: flex;
+}
+.cardHead {
+  justify-content: center;
+  padding: 1rem;
+}
+.cardMeta {
+  justify-content: center;
+  padding: 1rem;
+}
+/*End Of FAQ Styles*/
+/*  dropdown menu*/
+.dropDown {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menuBars {
+  align-self: center;
+
+}
+@media only screen and (max-width: 667px) {
+
+
+  /* About Page layout*/
+ .aboutTitle {
+   background-color: #DBAE4B;
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   padding: 1rem 1rem;
+ }
+ .aboutHead {
+   color:black;
+   align-self: center;
+   font-family: 'Solway', serif;
+   padding-left: 1rem;
+ 
+ }
+ .aboutMeta {
+   align-self: center;
+   color: white;
+   font-family: 'Merriweather', serif;
+ }
+ .aboutMeContainer {
+   display: flex;
+   flex-flow: column wrap;
+   align-items: center;
+   justify-items: center;
+   min-height: 90vh;
+ }
+ .personalImg {
+   display: flex;
+   justify-self: center;
+   align-self: center;
+   width: auto;
+ }
+ .headShot {
+   justify-self: center;
+   height: 30rem;
+   width: 80%;
+   border: 1px solid black;
+   box-shadow: 10px 10px 8px #888888;
+  
+ }
+ .aboutMeText {
+   text-align: justify;
+   align-self: center;
+   justify-self: center;
+   width: 100%;
+   padding: 1rem;
+ 
+ }
+ /*end of About me layout*/
+ /*Menu layout and style*/
+ .menuTitle {
+   display: flex;
+   flex-direction: column;
+   background-color: #DBAE4B;
+   font-family: 'Solway', serif;
+   text-align: center;
+   padding: 1rem 1rem;
+   width: 100%
+ }
+ .menuHead {
+   text-align: center;
+   font-family: 'Solway', serif;
+ }
+ .menuMeta {
+  font-size: 1rem;
+  color: white;
+ }
+ .menuContainer {
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: center;
+   background-image: url(./Images/marbleBG.jpg);
+   background-color: #fcfcfc;
+   width: 100%;
+   height: auto;
+ }
+ .apps {
+   justify-self: center;
+   align-self: center;
+   text-align: center;
+   width: 100%;
+   height: 100%;
+ }
+ .itemHead {
+   text-decoration: underline;
+   text-align: center;
+   margin-bottom: 0px;
+ }
+ .salads {
+   width: 100%;
+   height: 100%;
+   justify-self: center;
+   align-self: center;
+   text-align: center;
+   
+ }
+ .entrees {
+   width: 100%;
+   height: 100%;
+   justify-self: center;
+   align-self: center;
+   text-align: center;
+   
+ }
+ .desserts {
+   width: 100%;
+   height: 100%;
+   justify-self: center;
+   align-self: center;
+   text-align: center; 
+ }
+ 
+ /*End of Menu style*/
+ }
