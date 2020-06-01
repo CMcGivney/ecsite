@@ -9,6 +9,7 @@ import Contact from './components/Contact'
 import NavBar from './components/NavBar'
 import Footer from './components/FooterAlt'
 import {Container} from 'semantic-ui-react'
+import ScrollToTop from './components/scrollToTop'
 import './App.css'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     
     <Container fluid style={{padding: "2rem 0 0 0", margin: "0 0"}}>
      <NavBar/>
+     <ScrollToTop />
       <Switch>
        <Route exact path='/' component={Home} />
        <Route exact path='/about' component={About} />
