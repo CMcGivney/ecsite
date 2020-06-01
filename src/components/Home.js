@@ -73,21 +73,27 @@ const Home = () => (
          className="bbbsUtah"
          src={bbbsUtah} 
          alt="Big Brother Big Sister of Utah Link"
-         href="https://bbbsu.org/">
+         href="https://bbbsu.org/"
+         rel="noopener noreferrer"
+         target="_blank">
         </Image>
         <Image 
         className="catholicCommunity"
        
         src={catholicUtah} 
         alt="Catholic Community Services of Northern Utah"
-        href="https://www.ccsnorthernutah.org/">
+        href="https://www.ccsnorthernutah.org/"
+        rel="noopener noreferrer"
+        target="_blank">
         </Image>
         <Image 
         className="voAmerica"
        
         src={voaUtah} 
         alt="Volunteers of America utah"
-        href="https://www.voaut.org/">
+        href="https://www.voaut.org/"
+        rel="noopener noreferrer"
+        target="_blank">
         </Image>
         </Image.Group>
       </div>
