@@ -32,7 +32,7 @@ class DropDownMenu extends React.Component {
              </Link>
               <Dropdown 
                 pointing="right"
-                icon="list" 
+                icon="bars" 
                 item
                 style={{ margin: '0', padding: "1rem", color: "white" }} 
                 scrolling
