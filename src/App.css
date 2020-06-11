@@ -134,17 +134,20 @@ body, html {
   margin: .5em;
   justify-self: center;
   align-self: center;
+  padding: 1rem;
 
 }
 .bbbsUtah {
   margin: .5em;
   justify-self: center;
   align-self: center;
+  padding: 1rem;
 }
 .voAmerica {
   margin: .5em;
   justify-self: center;
   align-self: center;
+  padding: 1rem;
 }
 
 /* About Page layout*/
@@ -317,7 +320,7 @@ a.social {
  /*End of social styles*/
  /*Email Style*/
 .emailBox {
-  grid-area: email;
+  align-self: center;
   padding: .5em;
   text-align: center;
   font-size: 1em;
@@ -350,38 +353,34 @@ a.email:hover {
 
 /*Footer style*/
 .footerGrid {
-  justify-content: center;
-  align-items: end;
-  text-align: center;
   background-color: rgb(219, 174, 75);
-  display: grid;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  text-align: center;
   width: 100%;
   padding: 1rem;
-  grid-template-columns: 20em;
-  grid-template-rows: auto;
-  grid-template-areas: "title" "social" "email" "phone"  "power";
 }
 
 .mainFooter {
   font-family: 'Dancing Script', cursive;
+  margin: .5em 0;
+  align-self: center;
   font-size: 3rem;
-  padding: .5em 0;
-  grid-area: title;
+  font-weight: 600;
+  min-height:3rem;
 }
 .phoneNum {
   font-family: 'Roboto Slab', serif;
-  padding: .5em;
-  grid-area: phone;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  align-self: center;
 }
 .poweredBy {
   font-family: 'Roboto Slab', serif;
-  grid-area: power;
-  padding: .5em;
+  padding: 1em;
 }
-.socialFollows {
-  grid-area: social;
-  padding: 1rem;
-}
+
 
 /*FAQ Page style*/
 .faqContainer {

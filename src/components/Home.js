@@ -68,7 +68,7 @@ const Home = () => (
       
     <div className="affiliations">
       <Header.Content as="h2" className="com_header">Community Affiliations</Header.Content>
-       <Image.Group size="small" className="imageGroup">
+       <Image.Group size="medium" className="imageGroup">
         <Image 
          className="bbbsUtah"
          src={bbbsUtah} 
@@ -78,24 +78,22 @@ const Home = () => (
          target="_blank">
         </Image>
         <Image 
-        className="catholicCommunity"
-       
-        src={catholicUtah} 
-        alt="Catholic Community Services of Northern Utah"
-        href="https://www.ccsnorthernutah.org/"
-        rel="noopener noreferrer"
-        target="_blank">
+         className="catholicCommunity"
+         src={catholicUtah} 
+         alt="Catholic Community Services of Northern Utah"
+         href="https://www.ccsnorthernutah.org/"
+         rel="noopener noreferrer"
+         target="_blank">
         </Image>
         <Image 
-        className="voAmerica"
-       
-        src={voaUtah} 
-        alt="Volunteers of America utah"
-        href="https://www.voaut.org/"
-        rel="noopener noreferrer"
-        target="_blank">
+         className="voAmerica"
+         src={voaUtah} 
+         alt="Volunteers of America utah"
+         href="https://www.voaut.org/"
+         rel="noopener noreferrer"
+         target="_blank">
         </Image>
-        </Image.Group>
+       </Image.Group>
       </div>
     </div>
   </> 

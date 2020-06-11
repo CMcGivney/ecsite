@@ -1,5 +1,5 @@
 import React from 'react'
-import {Header,} from 'semantic-ui-react'
+import {Header, Icon} from 'semantic-ui-react'
 import SocialFollow from './SocialFollows'
 
 class Footer extends React.Component {
@@ -9,37 +9,33 @@ class Footer extends React.Component {
     return (
         <>
         <div className="footerGrid">
-          <Header.Content as="h3" className='mainFooter'>Elysian Catering
-          </Header.Content>
-          <div className='phoneNum'>
-            <Header.Content>
-             Call: <a className="email" href="tel:+1-385-368-3525">1-(385)-368-3525</a>
+          <Header.Content className='mainFooter'>Elysian Catering</Header.Content>
+           <Header.Content><SocialFollow/></Header.Content>
+            <Header.Content className='phoneNum'>
+              <Icon name="phone"/><a className="email" href="tel:+1-385-368-3525">1-(385)-368-3525</a>
             </Header.Content>
-           </div>
-          <div className='bizAddress'>
+             <Header.Content className='emailBox'>
+               <Icon name="mail"/><a className="email" href="mailto:asuntagaribay18@gmail.com">AsuntaGaribay18@gmail.com</a>
+             </Header.Content>
+          {/* <div className='bizAddress'>
             <Header.Content>
-            {/* business address here */}
+            business address here 
             </Header.Content>
-           </div>
-          <div className='emailBox'>
-            <Header.Content>
-             Email: <a className="email" href="mailto:asuntagaribay18@gmail.com">AsuntaGaribay18@gmail.com</a>
-            </Header.Content>
-            </div>
-          <div className='socialFollows'>
-            <Header.Content>
-             <SocialFollow/>
-            </Header.Content>
-          </div>
+           </div> */}
+         
           {/* <div className="poweredBy">
             <Header.Content>
               Powered by: <a className="email" href="https://chris-portfo.herokuapp.com/">84Creations</a>
              </Header.Content>
           </div> */}
         </div>
-
-        </>
-    )
+       </>
+     )
     }
   }
     export default Footer
+         
+
+         
+
+          
