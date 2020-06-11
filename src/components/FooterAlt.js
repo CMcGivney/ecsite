@@ -15,7 +15,14 @@ class Footer extends React.Component {
               <Icon name="phone"/><a className="email" href="tel:+1-385-368-3525">1-(385)-368-3525</a>
             </Header.Content>
              <Header.Content className='emailBox'>
-               <Icon name="mail"/><a className="email" href="mailto:asuntagaribay18@gmail.com">AsuntaGaribay18@gmail.com</a>
+               <Icon name="mail"/>
+               <a 
+                 className="email" 
+                 href="mailto:asuntagaribay18@gmail.com"
+                 rel= "noopener noreferrer"
+                 target= "_blank">
+                 AsuntaGaribay18@gmail.com
+               </a>
              </Header.Content>
           {/* <div className='bizAddress'>
             <Header.Content>
