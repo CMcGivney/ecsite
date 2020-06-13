@@ -1,7 +1,7 @@
 import React from 'react'
 import {Header, Image,} from 'semantic-ui-react'
 import Twitter from './Twitter.js'
-import Slider from './Slider.js'
+// import Slider from './Slider.js'
 import TitleLogo from './TitleLogo.js'
 import YouTube from 'react-youtube-embed'
 import bbbsUtah from "../Images/BBBSUtah-logo.png"
@@ -45,9 +45,9 @@ const Home = () => (
        <Header.Content as="h4" style={{margin: "0 1em .5em 1em"}}>Food should taste good. It should feel good. It should do good things for you and the world around you.</Header.Content>
        <Header.Content as="p">~ The Elysian Catering Promise ~</Header.Content>
       </div> 
-      <div style={{padding:"1rem 0", backgroundColor: "black", width:"100%"}}>
+      {/* <div style={{padding:"1rem 0", backgroundColor: "black", width:"100%"}}>
         <Slider/>
-      </div>
+      </div> */}
   
      <div className="youtubeContainer" >
       <div className="mediaTitle">
