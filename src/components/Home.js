@@ -55,7 +55,7 @@ const Home = () => (
         <Header.Content as="h5" className="aboutMeta">*Subscribe to Chef AG's YouTube!</Header.Content>
       </div>
       <div className="youtube">
-        <YouTube id="2B9ZMw1kp9g" appendSrc="?autoplay=0&playlist=2B9ZMw1kp9g&loop=1&modestbranding=1" SameSite="none" Secure/>
+        <YouTube id="2B9ZMw1kp9g" appendSrc="?autoplay=0&playlist=2B9ZMw1kp9g&loop=1&modestbranding=1&SameSite=Strict"/>
       </div>
     </div>
 
