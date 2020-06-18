@@ -46,7 +46,7 @@ handleSubmit = (e) => {
   message_html: message,
  }
 
- emailjs.send('gmail', "template_G85KdgEv", templateParams, "user_8MVNXasymY2fplvCKCOlQ"
+ emailjs.send('gmail', "template_T9qf6qBd", templateParams, "user_DPXyyf8OCsq80vNDZsRU8"
    ).then((response) => {
    console.log('SUCCESS!', response.status, response.text);
    }, (err) => {
