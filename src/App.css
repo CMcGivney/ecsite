@@ -68,12 +68,19 @@ body, html {
   flex-direction: column;
   width: 100%;
 }
+.eventContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+}
 .twitter {
   display: flex;
   text-align: center;
   justify-self: center;
   align-self: center;
 }
+
 .youtubeContainer {
   width: 100%;
   display: flex;

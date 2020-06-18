@@ -9,8 +9,8 @@ const TwitterEvents = () => (
      />
      <TwitterTimelineEmbed
         sourceType="profile"
-        screenName="ElysianEvents1"
-        options={{height: "70vh", width: "80vw"}}
+        screenName="ElysianEvents1" 
+        options={{height: "70vh", width: "50vw"}}
         sameSite='none'
      />
   </Container>
