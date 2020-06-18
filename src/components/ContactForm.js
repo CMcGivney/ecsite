@@ -27,6 +27,10 @@ class ContactForm extends React.Component {
     this.props.history.push("/")
   }
   
+  handleFailToSend = () => {
+    window.open('mailto:asuntagaribay18@gmail.com?subject=Request a quote');
+    this.props.history.push("/")
+  }
 
  
 handleChange = (e) => {
@@ -48,11 +52,20 @@ handleSubmit = (e) => {
 
  emailjs.send('gmail', "template_T9qf6qBd", templateParams, "user_DPXyyf8OCsq80vNDZsRU8"
    ).then((response) => {
+    if (response.status === 200) {
+      this.resetForm()
+    }
    console.log('SUCCESS!', response.status, response.text);
    }, (err) => {
+     if (err) {
+       alert("Sorry Message Failed at this time")
+       this.handleFailToSend()
+     }
     console.log('FAILED...', err);
    })
- this.resetForm()
+
+   
+
 }
 
 
