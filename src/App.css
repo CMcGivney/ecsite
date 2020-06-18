@@ -89,7 +89,7 @@ body, html {
   justify-content: center;
   width: 100%;
   height: 7rem;
-  padding: 1rem 0; 
+  padding: 1rem .5rem; 
   margin-bottom: 1rem;
   background-color: #DBAE4B;
   color: white;
@@ -156,7 +156,8 @@ body, html {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 1rem 1rem;
+  padding: 5rem 0 2rem;
+ 
 }
 .aboutHead {
   color:black;
@@ -224,17 +225,18 @@ body, html {
   background-color: #fcfcfc;
   background-size: 100%;
   width: 100%;
-  height: 100%;
-  margin-top: 3rem;
+  min-height: 80vh;
+  margin-top: 2rem;
  
 }
 .apps {
   justify-self: center;
-  align-self: center;
+  align-self: flex-start;
   text-align: center;
-  margin: 1rem;
+  margin: 1rem 0;
   width: 100%;
   height: 100%;
+  padding:.5rem
 }
 .itemHead {
   text-decoration: underline;
@@ -244,26 +246,29 @@ body, html {
 .salads {
   width: 100%;
   height: 100%;
+  padding:.5rem;
   justify-self: center;
   align-self: flex-start;
   text-align: center;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 .entrees {
   width: 100%;
   height: 100%;
+  padding:.5rem;
   justify-self: center;
   align-self: flex-start;
   text-align: center;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 .desserts {
   width: 100%;
   height: 100%;
+  padding:.5rem;
   justify-self: center;
   align-self: flex-start;
   text-align: center;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 /*End of Menu style*/
@@ -273,7 +278,7 @@ body, html {
   justify-content: center;
   margin: 1rem 1rem;
   flex-wrap: wrap;
-  min-height: 30rem;
+
 }
 .contactTitle {
   background-color: #DBAE4B;
@@ -281,10 +286,9 @@ body, html {
   display: flex;
   margin-bottom: 2rem;
   justify-content: center;
-  justify-self: center;
   width: 100%;
   font-family: "Merriweather", serif;
-  margin-top: 3rem;
+  padding: 5rem 0 3rem;
   
 }
 .contactForm {
@@ -342,12 +346,12 @@ a.email:hover {
   display:flex;
   background-color: #DBAE4B;
   text-align: center;
-  margin: 3rem 0;
-  padding: 1rem 0;
+  margin: 2rem 0;
+  padding: 5rem 0 2rem;
   font-family: 'Solway', serif;
   justify-content: center;
+  align-content: center;
   width: 100%;
-  height: 15vh;
 }
 /*End og events styles*/
 
@@ -383,10 +387,12 @@ a.email:hover {
 
 
 /*FAQ Page style*/
+
 .faqContainer {
   display: flex;
   width: 100%;
   margin: 2rem 0 5rem 0;
+ 
 }
 
 .cardContainer {
@@ -473,6 +479,23 @@ h3 {
   background: #adceed;
 } 
 /** end of slider css**/
+/** FindUs css**/
+.findUs {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  min-height: 30vh;
+}
+.findUsItem {
+  justify-self: center;
+  align-self: center;
+  margin: 1rem;
+ 
+}
+/**end of fidUs  **/
 @media only screen and (max-width: 667px) {
 
 
@@ -555,7 +578,7 @@ h3 {
  }
  .apps {
    justify-self: center;
-   align-self: center;
+   align-self: flex-start;
    text-align: center;
    width: 100%;
    height: 100%;

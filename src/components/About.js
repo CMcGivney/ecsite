@@ -3,8 +3,8 @@ import {Header, Image, Container} from 'semantic-ui-react'
 import HeadShot from '../Images/B&WShot1.PNG'
 
 const About = () => (
-  <Container text style={{marginTop: '3rem'}}>
-     <div className='aboutTitle'>
+  <Container text style={{minHeight: "95vh"}}>
+     <div className='contactTitle'>
       <Header.Content as="h2" className= "aboutHead" >Asunta Garibay</Header.Content>
       <Header.Content as="p" className= "aboutMeta">Chef & Founder</Header.Content>
      </div>
@@ -30,7 +30,9 @@ const About = () => (
            Currently a member in good standing with the American Culinary Federation since 2007, the IACP (International Association of Culinary Professionals) since 2017, Member of Utah Restaurant Association since 2017, the WCP (Women Chef Professionals) since 2017, ServeSafe management certified since 2014, and HAACP certified since 2019.
        </p>
      </div>
-    
+    <div>
+      {/* <Header.Content as="h1" >Local First Ensures The Freshest Flavors</Header.Content> */}
+    </div>
    </div>
   </Container>
 )

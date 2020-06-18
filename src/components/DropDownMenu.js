@@ -17,7 +17,7 @@ class DropDownMenu extends React.Component {
         pointing 
         fluid
         fixed="top"
-        style={{backgroundColor: "black", opacity:"0.9", boxShadow: "0 2px 2px -2px rgba(0,0,0,.2)", }}>
+        style={{backgroundColor: "black", boxShadow: "0 2px 2px -2px rgba(0,0,0,.2)", }}>
         <Container className="dropDown" >
            <Link to="/">
            <Menu.Item 

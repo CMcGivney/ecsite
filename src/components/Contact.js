@@ -3,7 +3,7 @@ import {Header,} from 'semantic-ui-react'
 import ContactForm from './ContactForm.js'
 
 const Contact = () => (
-  <>
+  <div style={{minHeight:"100vh",}}>
    <div className='contactTitle'>
     <Header.Content as="h1" className="aboutHead">Lets Connect</Header.Content>
     <Header.Content as="h4" className="aboutMeta">*contact us for availability</Header.Content>
@@ -13,7 +13,7 @@ const Contact = () => (
      <ContactForm/>
     </div>
    </div>
-  </>
+  </div>
 )
 
 export default Contact;

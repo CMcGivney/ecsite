@@ -3,6 +3,7 @@ import {Header, Image,} from 'semantic-ui-react'
 import Twitter from './Twitter.js'
 // import Slider from './Slider.js'
 import TitleLogo from './TitleLogo.js'
+import FindUs from './FindUs.js'
 import YouTube from 'react-youtube-embed'
 import bbbsUtah from "../Images/BBBSUtah-logo.png"
 import catholicUtah from "../Images/catholicCommunity.jpg"
@@ -45,9 +46,6 @@ const Home = () => (
        <Header.Content as="h4" style={{margin: "0 1em .5em 1em"}}>Food should taste good. It should feel good. It should do good things for you and the world around you.</Header.Content>
        <Header.Content as="p">~ The Elysian Catering Promise ~</Header.Content>
       </div> 
-      {/* <div style={{padding:"1rem 0", backgroundColor: "black", width:"100%"}}>
-        <Slider/>
-      </div> */}
   
      <div className="youtubeContainer" >
       <div className="mediaTitle">
@@ -68,10 +66,20 @@ const Home = () => (
       <Twitter style={{"alignText": "center"}}/>
      </div>
      </div>
-        
+
+     <div className="affiliations" >
+       <div className="mediaTitle">
+        <Header.Content as="h3" className="aboutHead">Planning your Wedding? </Header.Content>
+        <Header.Content as="h5" className="aboutMeta">*find us here!</Header.Content>
+      </div>
+      <FindUs/>
+      </div>
       
     <div className="affiliations">
-      <Header.Content as="h2" className="com_header">Community Affiliations</Header.Content>
+      <div className="mediaTitle">
+        <Header.Content as="h3" className="aboutHead">Community Affiliations</Header.Content>
+        <Header.Content as="h5" className="aboutMeta">*we are in this together</Header.Content>
+      </div>
        <Image.Group size="medium" className="imageGroup">
         <Image 
          className="bbbsUtah"
@@ -79,7 +87,8 @@ const Home = () => (
          alt="Big Brother Big Sister of Utah Link"
          href="https://bbbsu.org/"
          rel="noopener noreferrer"
-         target="_blank">
+         target="_blank"
+         >
         </Image>
         <Image 
          className="catholicCommunity"

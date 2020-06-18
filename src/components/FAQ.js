@@ -4,7 +4,7 @@ import {Header, Card,} from 'semantic-ui-react'
 
 
 const Faq = () => (
-  <>
+  <div style={{minHeight: "100vh",}}>
     <Header.Content as="h1" className="eventHead">Frequently Ask Questions</Header.Content>
   <div className="faqContainer">
    <Card.Group className="cardContainer" stackable>
@@ -30,7 +30,7 @@ const Faq = () => (
     </Card>
    </Card.Group>
    </div>
-  </>
+  </div>
 )
 
 export default Faq;
