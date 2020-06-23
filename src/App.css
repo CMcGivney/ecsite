@@ -341,6 +341,7 @@ a.social {
 
 a.email {
   color: black;
+
 }
 
 a.email:hover {
@@ -363,33 +364,30 @@ a.email:hover {
 /*End og events styles*/
 
 /*Footer style*/
-.footerGrid {
+.footerFlex {
   background-color: rgb(219, 174, 75);
   display: flex;
   flex-flow: column wrap;
-  align-content: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  width: 100%;
   padding: 1rem;
 }
 
 .mainFooter {
   font-family: 'Dancing Script', cursive;
-  margin: .5em 0;
   align-self: center;
-  font-size: 3rem;
   font-weight: 600;
-  min-height:3rem;
+  font-size: 3rem;
+  margin: 1rem 0;
 }
 .phoneNum {
   font-family: 'Roboto Slab', serif;
-  margin-top: 1rem;
-  padding-top: 1rem;
   align-self: center;
+  padding: .5em;
 }
-.poweredBy {
-  font-family: 'Roboto Slab', serif;
-  padding: 1em;
+.bizAddress{
+  padding: .5em;
 }
 
 
