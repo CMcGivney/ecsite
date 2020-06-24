@@ -107,6 +107,8 @@ handleSubmit = (e) => {
          name="numGuests"
          label="Number of Guests"
          type="number"
+         min= "1"
+         placeholder="1"
          value={this.state.numGuests}
          onChange={this.handleChange}
          required

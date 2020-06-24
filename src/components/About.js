@@ -13,7 +13,6 @@ const About = () => (
       <Image
        src = {HeadShot}
        alt= "Head shot of Elysian Chef & Founder"
-      //  floated= "left"
        size="small"
        />
      </div>
