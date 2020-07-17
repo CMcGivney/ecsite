@@ -2,6 +2,7 @@ import React from 'react';
 import {Route, Switch, } from "react-router-dom";
 import Home from './components/Home'
 import About from './components/About'
+import NoMatch from './components/NoMatch'
 import FAQ from './components/FAQ'
 import Menu from './components/Menu'
 import Events from './components/Events'
@@ -25,6 +26,7 @@ function App() {
        <Route exact path='/Menu' component={Menu} />
        <Route exact path='/Events' component={Events} />
        <Route exact path='/Contact' component={Contact} />
+       <Route component={NoMatch} />
       </Switch>
       <Footer/>
     </Container>
