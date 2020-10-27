@@ -32,8 +32,7 @@ class ContactForm extends React.Component {
     this.props.history.push("/")
   }
 
- 
-handleChange = (e) => {
+  handleChange = (e) => {
   this.setState({ [e.target.name]: e.target.value, })
 }
 
@@ -50,8 +49,8 @@ handleSubmit = (e) => {
   message_html: message,
  }
 
- emailjs.send('gmail', "template_T9qf6qBd", templateParams, "user_DPXyyf8OCsq80vNDZsRU8"
-   ).then((response) => {
+ emailjs.send('elysiancatering', "template_69z3z8v", templateParams, "user_uS3NJkEwyTWq9dmlwjJKD")
+   .then((response) => {
     if (response.status === 200) {
       this.resetForm()
     }
@@ -63,9 +62,6 @@ handleSubmit = (e) => {
      }
     console.log('FAILED...', err);
    })
-
-   
-
 }
 
 
